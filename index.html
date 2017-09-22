@@ -15,10 +15,13 @@ The code behind this site is licensed under the GNU GPLv3, which you can view in
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
-  <link rel="stylesheet" href="css/bootstrap-material-design.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/mdb.min.css">
 
   <!-- FA -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/font-awesome-animation.min.css">
+
 
   <!-- Custom Styles -->
   <link rel="stylesheet" href="css/custom.css" />
@@ -36,7 +39,7 @@ The code behind this site is licensed under the GNU GPLv3, which you can view in
   </div>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-dark stylish-color sticky-top">
     <a class="navbar-brand" href="#">Van Hoosen Robotics</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navToggle" aria-controls="navToggle" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -60,18 +63,39 @@ The code behind this site is licensed under the GNU GPLv3, which you can view in
     <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
         <div class="carousel-item active">
-          <video class="img-responsive" autoplay loop muted>
-              <source src="img/helloworld.webm" type="video/mp4" />
-          </video>
-          <div class="carousel-caption text-center">
-            <h1 class="text-center">We <span class="typedjs"></span></h1><br />
-            <h3>We are VH Robotics.</h3>
+          <!--Mask color-->
+          <div class="view hm-black-light">
+            <!--Video source-->
+            <video class="video-full" autoplay loop>
+                    <source src="img/bnw.webm" type="video/webm" />
+                </video>
+            <div class="full-bg-img"></div>
+          </div>
+          <div class="carousel-caption">
+            <div class="flex-center animated slideInDown">
+              <ul>
+                <li>
+                  <h1 class="h1-responsive">We are <span class="typedjs"></span></h1></li>
+                <li>
+                  <h3>We are VH Robotics.</h3>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  </div>
+
+  <!-- Who Are We -->
+  <div class="card card-body">
+    <h4 class="card-title">Panel title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <div class="flex-row">
+        <a class="card-link">Card link</a>
+        <a class="card-link">Another link</a>
+    </div>
+</div>
   <!-- Footer -->
   <footer>
     <div class="container-fluid">
@@ -85,7 +109,9 @@ The code behind this site is licensed under the GNU GPLv3, which you can view in
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://unpkg.com/popper.js@1.12.5/dist/umd/popper.js" integrity="sha384-KlVcf2tswD0JOTQnzU4uwqXcbAy57PvV48YUiLjqpk/MJ2wExQhg9tuozn5A1iVw" crossorigin="anonymous"></script>
-  <script src="js/bootstrap-material-design.min.js"></script>
+  <script src="js/mdb.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
 
   <!-- Preloader Script -->
   <script>
@@ -93,6 +119,7 @@ The code behind this site is licensed under the GNU GPLv3, which you can view in
       $(".loader").delay(500).fadeOut(500);
     });
   </script>
+
 
 </body>
 
