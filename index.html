@@ -19,11 +19,22 @@ The code behind this site is licensed under the GNU GPLv3, which you can view in
 
   <!-- FA -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/custom.css" />
 </head>
 
 <body>
+  <!-- Preloader -->
+  <div class='loader'>
+    <div class='loader-container'>
+      <div class="loader-animation">
+      </div>
+    </div>
+  </div>
+
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <a class="navbar-brand" href="#">Van Hoosen Robotics</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navToggle" aria-controls="navToggle" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -42,21 +53,29 @@ The code behind this site is licensed under the GNU GPLv3, which you can view in
   </nav>
   <!-- /Navbar -->
 
+  <!-- Video -->
+  <div class="cover">
+    <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <video class="img-responsive" autoplay loop muted>
+              <source src="img/helloworld.webm" type="video/mp4" />
+          </video>
+          <div class="carousel-caption text-center">
+            <h1 class="text-center">We <span class="typedjs"></span></h1><br />
+            <h3>We are VH Robotics.</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
   <!-- Footer -->
   <footer>
     <div class="container-fluid">
       <hr />
-      <div class="row">
-        <div class="col-md-6">
-          <h6>&copy; 2017 Van Hoosen Robotics. All rights reserved.</h6>
-        </div>
-        <div class="col-md-3">
-          <i class="fa fa-code"></i> with <i class="fa fa-heart"></i> by <a href="https://unixfy.me">Unixfy</a>
-        </div>
-        <div class="col-md-3">
-          <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
-        </div>
-      </div>
+      <b>&copy; 2017 Van Hoosen Robotics. All rights reserved.</b> <small><i class="fa fa-code"></i> with <i class="fa fa-heart"></i> by <a href="https://unixfy.me">Unixfy</a></small><br /><br />
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a> <small>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a></small>.
     </div>
   </footer>
 
@@ -65,7 +84,14 @@ The code behind this site is licensed under the GNU GPLv3, which you can view in
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://unpkg.com/popper.js@1.12.5/dist/umd/popper.js" integrity="sha384-KlVcf2tswD0JOTQnzU4uwqXcbAy57PvV48YUiLjqpk/MJ2wExQhg9tuozn5A1iVw" crossorigin="anonymous"></script>
   <script src="js/bootstrap-material-design.min.js"></script>
-  <script src="js/ripples.js"></script>
+
+  <!-- Preloader Script -->
+  <script>
+    $(window).on('load', function() {
+      $(".loader").delay(500).fadeOut(500);
+    });
+  </script>
+
 </body>
 
 </html>
