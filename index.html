@@ -39,9 +39,9 @@ The code behind this site is licensed under the GNU GPLv3, which you can view in
   </div>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark stylish-color sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-dark stylish-color fixed-top scrolling-navbar">
     <a class="navbar-brand" href="#">Van Hoosen Robotics</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navToggle" aria-controls="navToggle" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navToggle" aria-type="button"controls="navToggle" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -51,7 +51,18 @@ The code behind this site is licensed under the GNU GPLv3, which you can view in
           <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <div class="btn-group">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown link
+            </a>
+            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Separated link</a>
+            </div>
+          </div>
         </li>
       </ul>
     </div>
@@ -66,8 +77,8 @@ The code behind this site is licensed under the GNU GPLv3, which you can view in
           <!--Mask color-->
           <div class="view hm-black-light">
             <!--Video source-->
-            <video class="video-full" autoplay loop>
-                    <source src="img/bnw.webm" type="video/webm" />
+            <video class="video-full" autoplay>
+                    <source src="img/perfecthour.webm" type="video/webm" />
                 </video>
             <div class="full-bg-img"></div>
           </div>
@@ -92,10 +103,34 @@ The code behind this site is licensed under the GNU GPLv3, which you can view in
     <h4 class="card-title">Panel title</h4>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     <div class="flex-row">
-        <a class="card-link">Card link</a>
-        <a class="card-link">Another link</a>
+      <a class="card-link">Card link</a>
+      <a class="card-link">Another link</a>
     </div>
-</div>
+  </div>
+  <div class="card card-body">
+    <h4 class="card-title">Panel title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <div class="flex-row">
+      <a class="card-link">Card link</a>
+      <a class="card-link">Another link</a>
+    </div>
+  </div>
+  <div class="card card-body">
+    <h4 class="card-title">Panel title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <div class="flex-row">
+      <a class="card-link">Card link</a>
+      <a class="card-link">Another link</a>
+    </div>
+  </div>
+  <div class="card card-body">
+    <h4 class="card-title">Panel title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <div class="flex-row">
+      <a class="card-link">Card link</a>
+      <a class="card-link">Another link</a>
+    </div>
+  </div>
   <!-- Footer -->
   <footer>
     <div class="container-fluid">
@@ -107,8 +142,8 @@ The code behind this site is licensed under the GNU GPLv3, which you can view in
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script src="https://unpkg.com/popper.js@1.12.5/dist/umd/popper.js" integrity="sha384-KlVcf2tswD0JOTQnzU4uwqXcbAy57PvV48YUiLjqpk/MJ2wExQhg9tuozn5A1iVw" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/popper.js@1.12.5/dist/umd/popper.js"></script>
   <script src="js/mdb.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
 
