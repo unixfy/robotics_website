@@ -130,9 +130,30 @@ body {
   }
 }
 
-.brand-logo {
-  font-size: 2.3vmax !important;
+@media screen and (max-width:992px) {
+  .brand-logo {
+    font-size: 2.5vmax !important;
+  }
 }
+
+@media screen and (min-width:993px) {
+  .brand-logo {
+    font-size: 1.8vmax !important;
+  }
+}
+
+@media screen and (max-width:373px) {
+  .contact-text {
+    font-size: 2.5vmax !important;
+  }
+}
+
+#about{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 1.8vw;
+}
+
 
 
 /*Intro*/
@@ -173,6 +194,7 @@ body {
     50%{background-position:0% 100%}
     100%{background-position:100% 0%}
 }
+
 
 .intro-text-large {
   font-size: 4vmax !important;
