@@ -1,11 +1,10 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 html,
 body {
   height: 100%;
+}
+
+.intro {
+  height: 95vh !important;
 }
 
 /*preloader start*/
