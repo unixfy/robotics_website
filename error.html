@@ -1,0 +1,158 @@
+<!--
+This site was designed and created by Alex Wang/Unixfy.
+All of the code behind this website is available at my GitHub profile: https://github.com/unixfy/robotics_website
+The content of this site is licensed under the CC-Attribution-NonCommercial-ShareAlike 4.0 Int'l license.
+The code behind this site is licensed under the GNU GPLv3, which you can view in the /LICENSE file.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  <!-- FA -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/font-awesome-animation.min.css">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/custom.css" />
+
+  <title>Home | Van Hoosen Robotics</title>
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div class='loader'>
+    <div class='loader-container'>
+      <div class="loader-animation">
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <ul id='vex-teamdrop' class='dropdown-content'>
+    <li><a href="#!" class="waves-effect">6623A</a></li>
+    <li><a href="#!" class="waves-effect">6623B</a></li>
+  </ul>
+  <ul id='vexiq-teamdrop' class='dropdown-content'>
+    <li><a href="#!" class="waves-effect">10930A</a></li>
+    <li><a href="#!" class="waves-effect">10930B</a></li>
+  </ul>
+
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper blue-grey darken-1">
+        <div class="row">
+          <div class="col s12">
+            <a href="/" class="brand-logo">Van Hoosen Robotics</a>
+            <a href="#" data-activates="mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a class="vex-teamdrop-button waves-effect waves-light" href="#!" data-activates="vex-teamdrop">VRC Teams<i class="material-icons right">arrow_drop_down</i></a></li>
+              <li><a class="vexiq-teamdrop-button waves-effect waves-light" href="#!" data-activates="vexiq-teamdrop">VIQC Teams<i class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <ul class="side-nav" id="mobile">
+    <li><a href="/" class="waves-effect waves-green">Home</a></li>
+    <li class="no-padding">
+      <ul class="collapsible collapsible-accordion">
+        <li>
+          <a class="collapsible-header waves-effect waves-green">VRC Teams <i class="material-icons">arrow_drop_down</i></a>
+          <div class="collapsible-body">
+            <ul>
+              <li><a href="#!" class="waves-effect waves-green">6623A</a></li>
+              <li><a href="#!" class="waves-effect waves-green">6623B</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a class="collapsible-header waves-effect waves-green">VIQC Teams <i class="material-icons">arrow_drop_down</i></a>
+          <div class="collapsible-body">
+            <ul>
+              <li><a href="#!" class="waves-effect waves-green">10930A</a></li>
+              <li><a href="#!" class="waves-effect waves-green">10930B</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+  </ul>
+
+  <!-- Error -->
+  <div class="row">
+    <div class="col s12">
+      <div class="card blue light-blue darken-1">
+        <div class="card-content white-text">
+          <span class="card-title center-align"><h1>Oh no!</h1><br /><i class="fa fa-frown-o fa-4x faa-tada animated" aria-hidden="true"></i></span><br />
+          <h4 class="center-align">It looks like this page doesn't exist.</h4>
+        </div>
+        <div class="card-action center-align">
+          <a class="waves-effect waves-light btn-flat" href="/"><i class="fa fa-home" aria-hidden="true"></i> Return to our Homepage</a>
+          <a class="waves-effect waves-light btn-flat" onclick="window.history.go(-1); return false;"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i> Go back one page</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="row">
+      <div class="col s12">
+        <hr />
+        <b>&copy; 2017 Van Hoosen Robotics. All rights reserved.</b> <small><i class="fa fa-code"></i> with <i class="fa fa-heart"></i> by <a href="https://unixfy.me">Unixfy</a></small><br /><br />
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a> <small>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a></small>.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+  <script>
+    $(window).on('load', function() {
+      // Preloader
+      $(".loader").delay(150).fadeOut(500);
+
+      // SideNav Trigger
+      $(".button-collapse").sideNav();
+
+      // Dropdowns
+      $(".vex-teamdrop-button").dropdown({
+        inDuration: 300,
+        outDuration: 225,
+        constrainWidth: true, // Does not change width of dropdown to that of the activator
+        hover: true, // Activate on hover
+        gutter: 0, // Spacing from edge
+        belowOrigin: true, // Displays dropdown below the button
+        alignment: 'left', // Displays dropdown with edge aligned to the left of button
+        stopPropagation: false // Stops event propagation
+      });
+      $(".vexiq-teamdrop-button").dropdown({
+        inDuration: 300,
+        outDuration: 225,
+        constrainWidth: true, // Does not change width of dropdown to that of the activator
+        hover: true, // Activate on hover
+        gutter: 0, // Spacing from edge
+        belowOrigin: true, // Displays dropdown below the button
+        alignment: 'left', // Displays dropdown with edge aligned to the left of button
+        stopPropagation: false // Stops event propagation
+      });
+
+    });
+  </script>
+
+</body>
+
+</html>

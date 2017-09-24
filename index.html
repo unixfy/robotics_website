@@ -15,13 +15,11 @@ The code behind this site is licensed under the GNU GPLv3, which you can view in
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/mdb.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
   <!-- FA -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="css/font-awesome-animation.min.css">
-
 
   <!-- Custom Styles -->
   <link rel="stylesheet" href="css/custom.css" />
@@ -38,121 +36,224 @@ The code behind this site is licensed under the GNU GPLv3, which you can view in
     </div>
   </div>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark stylish-color fixed-top scrolling-navbar">
-    <a class="navbar-brand" href="#">Van Hoosen Robotics</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navToggle" aria-type="button"controls="navToggle" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <div id="header">
+    <!-- Navbar -->
+    <ul id='vex-teamdrop' class='dropdown-content'>
+      <li><a href="#!" class="waves-effect">6623A</a></li>
+      <li><a href="#!" class="waves-effect">6623B</a></li>
+    </ul>
+    <ul id='vexiq-teamdrop' class='dropdown-content'>
+      <li><a href="#!" class="waves-effect">10930A</a></li>
+      <li><a href="#!" class="waves-effect">10930B</a></li>
+    </ul>
 
-    <div class="collapse navbar-collapse" id="navToggle">
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        <li class="nav-item active">
-          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <div class="btn-group">
-            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown link
-            </a>
-            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Separated link</a>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <!-- /Navbar -->
-
-  <!-- Video -->
-  <div class="cover">
-    <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
-      <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active">
-          <!--Mask color-->
-          <div class="view hm-black-light">
-            <!--Video source-->
-            <video class="video-full" autoplay>
-                    <source src="img/perfecthour.webm" type="video/webm" />
-                </video>
-            <div class="full-bg-img"></div>
-          </div>
-          <div class="carousel-caption">
-            <div class="flex-center animated slideInDown">
-              <ul>
-                <li>
-                  <h1 class="h1-responsive">We are <span class="typedjs"></span></h1></li>
-                <li>
-                  <h3>We are VH Robotics.</h3>
-                </li>
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper blue-grey darken-1">
+          <div class="row">
+            <div class="col s12">
+              <a href="/" class="brand-logo">Van Hoosen Robotics</a>
+              <a href="#" data-activates="mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+              <ul class="right hide-on-med-and-down">
+                <li><a class="vex-teamdrop-button waves-effect waves-light" href="#!" data-activates="vex-teamdrop">VRC Teams<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a class="vexiq-teamdrop-button waves-effect waves-light" href="#!" data-activates="vexiq-teamdrop">VIQC Teams<i class="material-icons right">arrow_drop_down</i></a></li>
               </ul>
             </div>
           </div>
+        </div>
+      </nav>
+    </div>
+    <ul class="side-nav" id="mobile">
+      <li><a href="/" class="waves-effect waves-green">Home</a></li>
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header waves-effect waves-green">VRC Teams <i class="material-icons">arrow_drop_down</i></a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="#!" class="waves-effect waves-green">6623A</a></li>
+                <li><a href="#!" class="waves-effect waves-green">6623B</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a class="collapsible-header waves-effect waves-green">VIQC Teams <i class="material-icons">arrow_drop_down</i></a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="#!" class="waves-effect waves-green">10930A</a></li>
+                <li><a href="#!" class="waves-effect waves-green">10930B</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+    </ul>
+  </div>
+
+  <div id="body">
+    <!-- Intro -->
+    <div id="intro">
+      <div class="intro">
+        <h1 class="white-text intro-text-large"><span class="typedjs"></span></h1>
+        <h3 class="white-text intro-text-small">We are Van Hoosen Robotics.</h3>
+      </div>
+    </div>
+
+    <!-- About VH -->
+    <div id="about">
+      <div class="row">
+        <div class="col s12">
+
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Who Are We -->
-  <div class="card card-body">
-    <h4 class="card-title">Panel title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <div class="flex-row">
-      <a class="card-link">Card link</a>
-      <a class="card-link">Another link</a>
-    </div>
+  <div id="footer">
+    <!-- Footer -->
+    <footer class="page-footer blue-grey darken-2">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Contact Us</h5>
+            <div class="row">
+              <div class="col s12 center-align">
+                <ul class="tabs blue-grey darken-2">
+                  <li class="tab col s3"><a class="active light-blue-text text-lighten-3 waves-effect waves-light" href="#email">Email</a></li>
+                  <li class="tab col s3"><a class="active light-blue-text text-lighten-3 waves-effect waves-light" href="#phone">Phone</a></li>
+                  <li class="tab col s3"><a class="active light-blue-text text-lighten-3 waves-effect waves-light" href="#address">Address</a></li>
+                </ul>
+              </div>
+              <div id="email" class="col s12">
+                <h5 class="left-align">Email us at: <a href="mailto:admin@domain.com" class="blue-text text-lighten-3">admin@domain.com</a></h5></div>
+              <div id="phone" class="col s12">
+                <h5 class="left-align">Call us at: <a href="tel:+12487264900" class="blue-text text-lighten-3">+1 (248) 726 4900</a></h5></div>
+              <div id="address" class="col s12">
+                <h5 class="left-align"><div class="green-text text-lighten-3">1399 Adams Rd, Rochester Hills, MI</div></h5></div>
+            </div>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3 modal-trigger" href="#licenseModal">Licensing Info</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          &copy; 2017 Van Hoosen Robotics.
+          <a class="grey-text text-lighten-4 right" href="#intro">Back to Top</a>
+        </div>
+      </div>
+    </footer>
   </div>
-  <div class="card card-body">
-    <h4 class="card-title">Panel title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <div class="flex-row">
-      <a class="card-link">Card link</a>
-      <a class="card-link">Another link</a>
-    </div>
   </div>
-  <div class="card card-body">
-    <h4 class="card-title">Panel title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <div class="flex-row">
-      <a class="card-link">Card link</a>
-      <a class="card-link">Another link</a>
-    </div>
-  </div>
-  <div class="card card-body">
-    <h4 class="card-title">Panel title</h4>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <div class="flex-row">
-      <a class="card-link">Card link</a>
-      <a class="card-link">Another link</a>
-    </div>
-  </div>
-  <!-- Footer -->
-  <footer>
-    <div class="container-fluid">
+
+  <!-- License Info Modal -->
+  <div id="licenseModal" class="modal bottom-sheet">
+    <div class="modal-content">
+      <h4><b>Website Licensing Information</b></h4>
       <hr />
-      <b>&copy; 2017 Van Hoosen Robotics. All rights reserved.</b> <small><i class="fa fa-code"></i> with <i class="fa fa-heart"></i> by <a href="https://unixfy.me">Unixfy</a></small><br /><br />
-      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a> <small>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a></small>.
+      <div class="row">
+        <div class="col s6">
+            <h5>Code Licensing</h5>
+            <b>We license our code under the GNU GPLv3 license.</b> The code for this website is available on GitHub. <a href="https://github.com/unixfy/robotics_website" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>
+ unixfy/robotics_website</a><br /><br />
+            <code class="codeblock">
+            Copyright (C) 2017 VH Robotics<br />
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see http://www.gnu.org/licenses/.
+  </code><br /><br />
+          <b>A full copy of this license is available <a href="https://github.com/unixfy/robotics_website/blob/master/LICENSE" target="_blank">here</a>.</b>
+        </div>
+        <div class="col s6">
+          <h5>Content Licensing</h5>
+          <b>The content of this website is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Int'l License.</b><br /><br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+        </div>
+      </div>
     </div>
-  </footer>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Okay</a>
+    </div>
+  </div>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://unpkg.com/popper.js@1.12.5/dist/umd/popper.js"></script>
-  <script src="js/mdb.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"></script>
 
-
-  <!-- Preloader Script -->
   <script>
     $(window).on('load', function() {
+      // Preloader
       $(".loader").delay(500).fadeOut(500);
+
+      // SideNav Trigger
+      $(".button-collapse").sideNav();
+
+      // Dropdowns
+      $(".vex-teamdrop-button").dropdown({
+        inDuration: 300,
+        outDuration: 225,
+        constrainWidth: true, // Does not change width of dropdown to that of the activator
+        hover: true, // Activate on hover
+        gutter: 0, // Spacing from edge
+        belowOrigin: true, // Displays dropdown below the button
+        alignment: 'left', // Displays dropdown with edge aligned to the left of button
+        stopPropagation: false // Stops event propagation
+      });
+      $(".vexiq-teamdrop-button").dropdown({
+        inDuration: 300,
+        outDuration: 225,
+        constrainWidth: true, // Does not change width of dropdown to that of the activator
+        hover: true, // Activate on hover
+        gutter: 0, // Spacing from edge
+        belowOrigin: true, // Displays dropdown below the button
+        alignment: 'left', // Displays dropdown with edge aligned to the left of button
+        stopPropagation: false // Stops event propagation
+      });
+
+      // Carousel(s)
+      $('.slider').slider({
+        indicators: false,
+        height: 550,
+        transition: 500,
+        interval: 3000
+      });
+
+      $('ul.tabs').tabs();
+
+      $('.modal').modal();
+
     });
+  </script>
+
+  <!-- Typedjs -->
+  <script>
+    var options = {
+      strings: ["<b>Teamwork</b>.", "<b>Programming</b>.", "<b>Building</b>.", "<b>STEM</b>.", "<b>Learning</b>.", "<b>VEX</b>.", "<b>Passion</b>."],
+      typeSpeed: 75,
+      startDelay: 750,
+      backSpeed: 75,
+      backDelay: 1500,
+      loop: false,
+      loopCount: Infinity,
+      autoInsertCss: false,
+      smartBackspace: false,
+    }
+
+    var typed = new Typed(".typedjs", options);
   </script>
 
 
