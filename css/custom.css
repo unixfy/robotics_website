@@ -201,3 +201,7 @@ body {
 .intro-text-small {
   font-size: 3.5vmax !important;
 }
+
+.about-text {
+  font-size: 0.7em;
+}
